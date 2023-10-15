@@ -62,11 +62,11 @@ export const HomeScreen: FC = () => {
   useEffect(() => {
     fetch('http://10.0.2.2:8000', { method: 'GET' }).then(async (data) => {
       const res = await data.text()
-
-      setTimeout(() => {
-        setHaha(true)
-      }, 20000)
     })
+
+    setTimeout(() => {
+      setHaha(true)
+    }, 20000)
   }, [search]);
 
   return (
